@@ -12,6 +12,9 @@
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="balises CSS"
+            
+            
 
             <!--Titre et texte qui s'affiche dans l'onglet du navigateur-->
             <title>Document</title>
@@ -21,6 +24,72 @@
 
         <!--On peut écrir ce que l'on veut-->
         <body>
-            Hello WF3
+            <!--TYPES DE BALISES-->
+                <!--Balises en paires, Ex : h1  à h6 titres principales-->
+                <h1> Audrey Gaudilliere - Développeuse web et web mobile en apprentissage</h1>
+
+                <!--Balises orphelines, ex :<im> image -->
+                <img src="assets/Images/fleur.jpg" 
+                     alt="photo de fleur">
+                <!--Attention, par convention, on peut fermer une balise orpheline, soit on l'ecrit <img> ce qui est correct, soit pour une meilleur lecture on l'écrit en la fermant comme ceci <img/> -->
+            
+                <!--Les attributs sont les "paramètres" des balises, ils viennent les compléter pour donner de nouvelles informations, Ex : src pour img-->
+                <balise attribut ="valeur"/>
+
+
+            <!--ORGANISATION DU TEXTE-->
+
+                <!--Ajout d'un bloc de type section-->
+                <section>
+                    <!--Organisation du texte avec des Headings, ici h1 pour titre principal, à présent h2-->
+                    <h2>Coordonnées</h2>
+
+                    <!--Paragraphes-->
+                    <p>Disponible de suite, contactez-moi !</p>
+                    
+                    <!--Balise Adresse pour rentrer mes coordonnées-->
+                    <address> 
+                        <!--Utilisation de la balise anchor <a></a> pour définir nos liens-->
+                        <a href="mailto:a.gaudilliere02@gmail.com">a.gaudilliere02@gmail.com</a><br>
+                        <a href="tel:+33624033395">+33(0)6-24-03-33-95</a>
+                    </address>
+                </section>
+
+
+                <section>
+                    <h2> Experiences professionnelles</h2>
+                    <!--Utilisation de la liste non-ordonnées-->
+                    <ul>
+                        <li>
+                             <h3> Alternance - Développeur web</h3>
+                             <p>En alternance depuis le 26 septembre a WF3</p>
+                        </li>
+                        <li>Premiere</li>
+                        <li>Deuxieme</li>
+                        <li>Troisième</li>
+                    </ul>
+                </section>
+
+
+                <section>
+                    <h2>Formations</h2>
+
+                    <ul>
+                        <li>
+                             <h3> Formation développeur web</h3>
+                             <p>En <b>alternance</b> depuis le <i>26 septembre</i> a <u>WF3</u></p>
+                        </li>
+                        <li>Premiere</li>
+                        <li>Deuxieme</li>
+                        <li>Troisième</li>
+                    </ul>
+                    <!--Strong : pour mettre le texte important pour le SIO-->
+                    <!--Lorem 40 : pour insérer 40 mots-->
+                    <!--Balise <mark>TEXTE</mark> pour mettre surligné-->
+
+
+                </section>
+
+
         </body>
     </html> 
