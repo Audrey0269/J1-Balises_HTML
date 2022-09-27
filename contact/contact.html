@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Contactez moi</title>
+        </head>
+        
+        <body>
+            <h1>Contactez moi</h1>
+
+            <!--l'attribut action va chercher une page de logique de programmation afin d'échanger avec le back tandis que l'attribut method 
+                nous permet soit de récup des infos avec get, soit en envoyer avec post (cela depend de si on envoi le formulaire pour recevoir 
+                ou envoyer des informations, la method post est la plus utilisé)-->
+            <form action="../assets/forms/send.php" method="post"> <!--Insertion d'un formulaire : manque le fichier PHP-->
+            <!--La balise label indique  à l'utilisateur quelle est l'action à effectuer-->
+                
+                <label for="name">
+                 Veuillez entrer votre nom
+                </label>
+                <!--La balise input permet d'afficher un champ de saisie afin de dialoguer avec l'utilisateur-->
+                 <input type="text"
+                        name="name"
+                        id="name">
+
+
+                <label for="email">
+                  Veuillez rentrer votre email
+                </label>
+                <!--L'attribut required fait en sorte que le navigateur n'enverra jamais les données du formulaires si ce champ précis est vide-->
+                 <input type="email"
+                        name="email"
+                        id="email"
+                        required>
+
+                <!--On envoit les données du formulaire-->
+                <button type="submit" value="Envoyer">Envoyer</button>
+
+                <!--Liens vers les sections de notre page-->
+                <p>Accès rapide</p>
+                <a href="../index.html#experiences">Expérience professionnelles</a>
+                <br>
+                <a href="../index.html#formations">Formations</a>
+                 
+
+
+            </form>
+
+            
+            <a href="../index.html"> Retour à l'accueil</a> <!--LIEN VERS UNE PAGE DE NOTRE SITE-->
+
+        </body>
+    </html>

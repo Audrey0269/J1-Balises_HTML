@@ -1,0 +1,36 @@
+/*Mes styles */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    --main-color:red;
+}
+/*on declare la variable couleur princiaple*/
+
+/*je decide que TOUS mes liens ne soient pas surllignés*/
+a {
+    text-decoration: none;
+    color:blue;
+}
+
+/*tous les liens non visités sont de cette couleur*/
+a:visited{
+    color:purple;
+}
+
+/*Je choisis la couleur ou comportement du lien au survol de la souris*/
+a:hover{
+    background: orange;
+    color:black;
+    text-decoration: underline;
+}
+
+
+
+/*si on met plusieurs couleur à un lien par exemple, ce sera la dernière couleur qui sera pris en compte, sauf si on met "!important" 
+a cote de la couleur, exemple : 
+color : rouge
+color : bleu !important;
+color : jaune */

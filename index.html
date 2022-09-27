@@ -1,50 +1,58 @@
+<!DOCTYPE html>  <!-- signale au navigateur que c'est un document HTML-->
 
-<!-- (Commentaires) : Signale au navigateur que c'est un document HTML-->
-<!DOCTYPE html>
+    <html lang="en">  <!--Langue et ouverture du document, DOM-->
 
-    <!--Lanngue et ouverture du document (DOM)-->
-    <html lang="en">
 
-        <!--En-tête du document-->
-        <head>
+
+        <head> <!--En-tête du document-->
 
             <!--Les balises META-->
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta name="description" content="balises CSS"
-            
-            
 
-            <!--Titre et texte qui s'affiche dans l'onglet du navigateur-->
-            <title>Document</title>
+            <!--Les balises CSS-->
+            <meta name="description" content="balises CSS"/>  <!---A supprimer ?-->
+            <link rel="stylesheet" href="assets/css/main.css"/>
+
+            <title>Document</title>  <!--Titre et texte qui s'affiche dans l'onglet du navigateur-->
         </head>
 
 
 
-        <!--On peut écrir ce que l'on veut-->
-        <body>
-            <!--TYPES DE BALISES-->
-                <!--Balises en paires, Ex : h1  à h6 titres principales-->
-                <h1> Audrey Gaudilliere - Développeuse web et web mobile en apprentissage</h1>
 
-                <!--Balises orphelines, ex :<im> image -->
-                <img src="assets/Images/fleur.jpg" 
-                     alt="photo de fleur">
-                <!--Attention, par convention, on peut fermer une balise orpheline, soit on l'ecrit <img> ce qui est correct, soit pour une meilleur lecture on l'écrit en la fermant comme ceci <img/> -->
+
+        <body>
+            <header>
+                
+                <h1> Audrey Gaudilliere - Développeuse web et web mobile en apprentissage</h1> <!--Titre, va de h1 à h6 (du plus au moins important)-->
+
+                <img src="assets/Images/fleur.jpg"  
+                     alt="photo de fleur"> <!--Balises orphelines, fermeture : <img> soit </img> (mieux)--> 
             
-                <!--Les attributs sont les "paramètres" des balises, ils viennent les compléter pour donner de nouvelles informations, Ex : src pour img-->
+                <!--Les attributs sont les "paramètres" des balises, ils viennent les compléter pour donner de nouvelles informations, 
+                    Ex : src pour img-->
                 <balise attribut ="valeur"/>
 
+                <!--LIEN VERS UNE PAGE DE NOTRE SITE-->
+                <a href="portfolio.html">Découvrez mes créations</a>
+                <a href="../Ballises HTML/contact/contact.html">mes contatcs</a>
 
-            <!--ORGANISATION DU TEXTE-->
+                <!--Liens vers les sections de notre page-->
+                <p>Accès rapide</p>
+                <a href="#experiences" title="Accès aux experiences">Expérience professionnelles</a>
+                <br>
+                <a href="#formations"title="Accès aux formations">Formations</a>
+            </header>
 
-                <!--Ajout d'un bloc de type section-->
-                <section>
-                    <!--Organisation du texte avec des Headings, ici h1 pour titre principal, à présent h2-->
-                    <h2>Coordonnées</h2>
 
-                    <!--Paragraphes-->
+
+            
+            <main>
+                <section> <!--bloc de type section-->
+                    
+                    <h2>Coordonnées</h2> <!--Organisation du texte avec des Headings (h1, h2)-->
+
                     <p>Disponible de suite, contactez-moi !</p>
                     
                     <!--Balise Adresse pour rentrer mes coordonnées-->
@@ -56,8 +64,12 @@
                 </section>
 
 
+
+
                 <section>
-                    <h2> Experiences professionnelles</h2>
+                    <h2 class="text-center" id="experiences"> Experiences professionnelles</h2> <!--on a mis un id car au dessus on a mis un lien permettant 
+                        de se "teleporter" directement à exp & on a mis une class pour le css (aligner)-->
+
                     <!--Utilisation de la liste non-ordonnées-->
                     <ul>
                         <li>
@@ -71,13 +83,19 @@
                 </section>
 
 
+
+
                 <section>
-                    <h2>Formations</h2>
+                    <h2 id="formations">Formations</h2>
 
                     <ul>
                         <li>
-                             <h3> Formation développeur web</h3>
-                             <p>En <b>alternance</b> depuis le <i>26 septembre</i> a <u>WF3</u></p>
+                             <h3> 
+                                Formation 
+                                <span classe="red">développeur</span> web chez 
+                                <a href="https://www.wf3.fr/" target="_blank">WebForce3</a><!--ajoute un lien avec l'attribut target avec la valeur _blank pour ouvrir un nouvel onglet-->
+                            </h3>
+                             <p>En <b>alternance</b> depuis le <i>26 septembre</i> a <u>WF3</u></p> <!--b = gras / i = italique / u= souligné ou <mark></mark>-->
                         </li>
                         <li>Premiere</li>
                         <li>Deuxieme</li>
@@ -85,10 +103,16 @@
                     </ul>
                     <!--Strong : pour mettre le texte important pour le SIO-->
                     <!--Lorem 40 : pour insérer 40 mots-->
-                    <!--Balise <mark>TEXTE</mark> pour mettre surligné-->
-
-
+                    <!--site freepick.com / site HTTrack : copier le code HTML et CSS d'un site-->
+                    <!--Image : si utile en HTML, si pour faire beau = en CSS-->
                 </section>
+            </main>
+
+
+            <footer>
+                Ma fin de page
+            </footer>
+          
 
 
         </body>
