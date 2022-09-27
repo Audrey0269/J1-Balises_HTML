@@ -12,10 +12,9 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
             <!--Les balises CSS-->
-            <meta name="description" content="balises CSS"/>  <!---A supprimer ?-->
             <link rel="stylesheet" href="assets/css/main.css"/>
 
-            <title>Document</title>  <!--Titre et texte qui s'affiche dans l'onglet du navigateur-->
+            <title>Les balises HTML</title>  <!--Titre et texte qui s'affiche dans l'onglet du navigateur-->
         </head>
 
 
@@ -25,7 +24,7 @@
         <body>
             <header>
                 
-                <h1> Audrey Gaudilliere - Développeuse web et web mobile en apprentissage</h1> <!--Titre, va de h1 à h6 (du plus au moins important)-->
+                <h1 class="dinguerie" style="color:red"> Audrey Gaudilliere - Développeuse web et web mobile en apprentissage</h1> <!--Titre, va de h1 à h6 (du plus au moins important)-->
 
                 <img src="assets/Images/fleur.jpg"  
                      alt="photo de fleur"> <!--Balises orphelines, fermeture : <img> soit </img> (mieux)--> 
@@ -49,16 +48,17 @@
 
             
             <main>
-                <section> <!--bloc de type section-->
+                <section class="bgRed"> <!--bloc de type section-->
                     
-                    <h2>Coordonnées</h2> <!--Organisation du texte avec des Headings (h1, h2)-->
+                    <h2 class="red">Coordonnées</h2> <!--Organisation du texte avec des Headings (h1, h2)-->
 
                     <p>Disponible de suite, contactez-moi !</p>
                     
                     <!--Balise Adresse pour rentrer mes coordonnées-->
                     <address> 
                         <!--Utilisation de la balise anchor <a></a> pour définir nos liens-->
-                        <a href="mailto:a.gaudilliere02@gmail.com">a.gaudilliere02@gmail.com</a><br>
+                        <a href="mailto:a.gaudilliere02@gmail.com">a.gaudilliere02@gmail.com</a>
+                        <br>
                         <a href="tel:+33624033395">+33(0)6-24-03-33-95</a>
                     </address>
                 </section>
@@ -73,16 +73,16 @@
                     <!--Utilisation de la liste non-ordonnées-->
                     <ul>
                         <li>
-                             <h3> Alternance - Développeur web</h3>
+                             <h3> Alternance - Développeur web chez <span class="red">WF3</span></h3>
                              <p>En alternance depuis le 26 septembre a WF3</p>
                         </li>
-                        <li>Premiere</li>
+                        <li>Premiere experience</li>
                         <li>Deuxieme</li>
                         <li>Troisième</li>
                     </ul>
                 </section>
 
-
+<!--REPRENDRE ICI CORECTION FORMATEUR + MANQUE HEADER MAIN ET FOOTER-->
 
 
                 <section>

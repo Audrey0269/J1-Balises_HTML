@@ -1,0 +1,40 @@
+/*Mes styles */
+
+/*Si on clic droit sur une page web et qu'on fait "inspecter" puis onglet en haut à gauche ca nous dit le texte qui va avec le css*/
+/* un id avec le même nom est utilisable UNE SEULE fois, contrairement à class*/
+
+
+p{
+    color: red;
+}
+
+/*class*/
+.blue{
+    color: blue;
+}
+
+/*id*/
+#baseline {
+    border: 2px solid black;
+}
+
+/*Plusieurs elements*/
+h1, span{
+    background-color: orange;
+    font-weight: bold;
+}
+
+/*Tous selectionner*/
+*{
+    font-size: 20px;
+}
+
+/*Strong uniquement dans les parargaphes*/
+p strong{
+    color: green;
+}
+
+/*va chercher uniquement le i dans p et strong*/
+p strong i{
+    color: pink;
+}
