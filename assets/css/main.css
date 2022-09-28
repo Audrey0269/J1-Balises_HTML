@@ -1,13 +1,15 @@
 /*Mes styles */
 
+/*on rend le scroll plus fluide*/
 html{
     scroll-behavior:smooth;
 }
 
+/*on declare la variable couleur princiaple*/
 body{
     --main-color:red;
 }
-/*on declare la variable couleur princiaple*/
+
 
 /*je decide que TOUS mes liens ne soient pas surllignés*/
 a {
@@ -27,6 +29,38 @@ a:hover{
     text-decoration: underline;
 }
 
+h1:hover{
+    color: black;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+strong{
+    font-weight: normal;
+}
+
+.red{
+    color: var(--main-color);
+}
+
+.blue{
+    color: blue;
+}
+
+.bgRed{
+    background-color: var(--main-color);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.dinguerie{
+    color: blue;
+    color: red;
+}
 
 
 /*si on met plusieurs couleur à un lien par exemple, ce sera la dernière couleur qui sera pris en compte, sauf si on met "!important" 
@@ -34,3 +68,15 @@ a cote de la couleur, exemple :
 color : rouge
 color : bleu !important;
 color : jaune */
+
+
+
+/*FLEXBOX*/
+
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}

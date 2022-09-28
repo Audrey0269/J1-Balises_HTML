@@ -1,10 +1,9 @@
-<!DOCTYPE html>  <!-- signale au navigateur que c'est un document HTML-->
+<!DOCTYPE html>         <!-- signale au navigateur que c'est un document HTML-->
 
-    <html lang="en">  <!--Langue et ouverture du document, DOM-->
+    <html lang="en">    <!--Langue et ouverture du document, DOM-->
 
 
-
-        <head> <!--En-tête du document-->
+        <head>          <!--En-tête du document-->
 
             <!--Les balises META-->
             <meta charset="UTF-8">
@@ -12,10 +11,17 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
             <!--Les balises CSS-->
-            <link rel="stylesheet" href="assets/css/main.css"/>
+            <link rel="stylesheet" href="../Ballises HTML/assets/css/main.css">
+            
+            <!--Integration de nouvelle police avec : font awesome cdn > premier résultatde recherche google > et copier coller le lien ci-dessous -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
 
             <title>Les balises HTML</title>  <!--Titre et texte qui s'affiche dans l'onglet du navigateur-->
         </head>
+
+
+
 
 
 
@@ -26,16 +32,39 @@
                 
                 <h1 class="dinguerie" style="color:red"> Audrey Gaudilliere - Développeuse web et web mobile en apprentissage</h1> <!--Titre, va de h1 à h6 (du plus au moins important)-->
 
-                <img src="assets/Images/fleur.jpg"  
-                     alt="photo de fleur"> <!--Balises orphelines, fermeture : <img> soit </img> (mieux)--> 
-            
-                <!--Les attributs sont les "paramètres" des balises, ils viennent les compléter pour donner de nouvelles informations, 
-                    Ex : src pour img-->
-                <balise attribut ="valeur"/>
 
-                <!--LIEN VERS UNE PAGE DE NOTRE SITE-->
-                <a href="portfolio.html">Découvrez mes créations</a>
-                <a href="../Ballises HTML/contact/contact.html">mes contatcs</a>
+                
+                    <img src="assets/Images/fleur.jpg"  
+                        alt="photo de fleur"> <!--Balises orphelines, fermeture : <img> soit </img> (mieux)--> 
+            
+                    <!--Les attributs sont les "paramètres" des balises, ils viennent les compléter pour donner de nouvelles informations, 
+                    Ex : src pour img-->
+                    <balise attribut ="valeur"/>
+                    <br>
+
+                    
+                        <!--LIEN VERS UNE PAGE DE NOTRE SITE-->
+                        <a href="portfolio.html">Découvrez mes créations</a>
+                        <br>
+                        <a href="../Ballises HTML/contact/contact.html">mes contatcs</a>
+                        <br>
+
+                        <!-- Insertion d'un icone Facebook :-->
+                        <!--Aller dans font Awsome > premier lien google > onglet icons > taper facebook > cliquer sur l'icone et Copier Coller le class > créer un lien :-->
+                        <a href="https://fr-fr.facebook.com/" 
+                            target="_blank"
+                            aria-label="Devenez fan sur Facebook">
+                            <i class="fa-brands fa-facebook" aria-hidden="true"></i>  
+                            <span> Facebook </span>
+                        </a>
+                        <!--Uniquement pour les personne en situation de handicap (aria...), pas d'incidance pour la mise en page : lorsque les logiciels 
+                        d'aide à la lecture tombent sur un icone pas interprétable, on utilise un aria_label pour indiuer la conduite à tenir-->
+                
+
+                
+
+
+
 
                 <!--Liens vers les sections de notre page-->
                 <p>Accès rapide</p>
@@ -66,15 +95,15 @@
 
 
 
-                <section>
+                <section aria-labelledby="experiences"> <!--labelledby pour les personnes en situation de handicap, leur permet d'aller plus haut ou bas, il est ici relié à l'id experience du titre h2-->
                     <h2 class="text-center" id="experiences"> Experiences professionnelles</h2> <!--on a mis un id car au dessus on a mis un lien permettant 
                         de se "teleporter" directement à exp & on a mis une class pour le css (aligner)-->
 
                     <!--Utilisation de la liste non-ordonnées-->
                     <ul>
                         <li>
-                             <h3> Alternance - Développeur web chez <span class="red">WF3</span></h3>
-                             <p>En alternance depuis le 26 septembre a WF3</p>
+                            <h3> Alternance - Développeur web chez <span class="red">WF3</span></h3>
+                            <p>En alternance depuis le 26 septembre a WF3</p>
                         </li>
                         <li>Premiere experience</li>
                         <li>Deuxieme</li>
@@ -82,20 +111,19 @@
                     </ul>
                 </section>
 
-<!--REPRENDRE ICI CORECTION FORMATEUR + MANQUE HEADER MAIN ET FOOTER-->
 
 
-                <section>
-                    <h2 id="formations">Formations</h2>
+                <section aria-labelledby="formations">
+                    <h2 class="text-center" id="formations">Formations et diplomes</h2>
 
                     <ul>
                         <li>
-                             <h3> 
+                            <h3> 
                                 Formation 
                                 <span classe="red">développeur</span> web chez 
                                 <a href="https://www.wf3.fr/" target="_blank">WebForce3</a><!--ajoute un lien avec l'attribut target avec la valeur _blank pour ouvrir un nouvel onglet-->
                             </h3>
-                             <p>En <b>alternance</b> depuis le <i>26 septembre</i> a <u>WF3</u></p> <!--b = gras / i = italique / u= souligné ou <mark></mark>-->
+                            <p>En <b>alternance</b> depuis le <i>26 septembre</i> a <u>WF3</u></p> <!--b = gras / i = italique / u= souligné ou <mark></mark>-->
                         </li>
                         <li>Premiere</li>
                         <li>Deuxieme</li>
@@ -112,7 +140,6 @@
             <footer>
                 Ma fin de page
             </footer>
-          
 
 
         </body>

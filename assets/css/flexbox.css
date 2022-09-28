@@ -1,0 +1,114 @@
+/*Mon style*/
+
+section div{
+    width: 200px;                                                /*Largeur*/
+    height: 200px;                                               /*hauteur*/
+    border: 1px solid black;                                   /*bordures*/
+    margin: 30px;                                                /*marge exterieur  et padding interieur*/
+    border-radius:50%;                                           /*ajout des bordures*/
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.35);              /*Ajout d'ombre (décalage, taille, flou)*/
+}
+
+div:first-of-type{                                                                              /*Selection de la première div*/
+    background: purple;                                     /*couleur de fond*/
+}
+
+div:nth-child(2){                                                                               /*Selection de la deuxieme div*/
+    background: green;                                      /*couleur de fond*/              
+}
+
+div:last-of-type{                                                                               /*Selection de la troisième div*/
+    background: red;                                        /*couleur de fond*/
+}
+
+/*EXEMPLE*/   
+/*display: flex;*/                                         /*alignement en ligne*/
+/*flex-direction: row-reverse; */                          /*alignement en rang inversé*/
+/*flex-direction: column;*/                                /*alignement en colonne*/
+/*flex-direction: column-reverse;*/                        /*alignement en colonne inversé*/
+/*flex-direction: row;*/                                   /*alignement en rang*/
+
+
+
+
+
+
+/*AXE PRINCIPAL - Propriété JUSTIFY-CONTENT*/
+
+/*HELPERS = création d'aide : ex : .RED correspond à couleur rouge, a chaque fois qu'on mettra en HTML une class RED = rouge*/
+
+.flex{
+    display:flex;
+}
+
+.flex-start{
+    justify-content: flex-start;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.center{
+    justify-content: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+
+
+.text-center{
+    text-align: center;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.column-reverse{
+    flex-direction: column-reverse;
+}
+
+
+
+
+
+/*AXE SECONDAIRE - Propriete ALIGN-ITEMS*/
+
+
+.stretch{
+    align-items:stretch
+}
+
+.align-flex-start{
+    align-items: flex-start;
+}
+
+.align-flex-end{
+    align-items: flex-end;
+}
+
+.align-center{
+    align-items: center;
+}
+
+
+
+
+
+.separation{
+    height: 50px;
+    background-color: black;
+}
+
+.container{
+    padding: 5px;
+    background: yellow;
+    height: 600px;
+}
