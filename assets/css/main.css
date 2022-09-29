@@ -30,7 +30,7 @@ a:hover{
 }
 
 h1:hover{
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .bold{
@@ -72,11 +72,107 @@ color : jaune */
 
 
 /*FLEXBOX*/
-
 .flex{
     display: flex;
 }
 
 .column{
     flex-direction: column;
+}
+
+.row{
+    flex-direction: row;
+}
+
+
+
+
+
+/*----------------------------BODY------------------------------*/
+.body{
+    background-image:url(../Images/fond.jpg);
+    width: 1100px;
+    margin: auto;   /*centre ma page*/
+}
+
+
+
+
+
+/*----------------------------HEADER---------------------------*/
+.h1{
+    background-color: rgb(106, 238, 176);
+    text-align: center;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+
+/*----NAV + image----*/
+.navimage{
+    background-color: rgb(202, 200, 200);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+/*Liens portfolio, contact et facebook*/
+.bloc0{
+    padding-top: 50px;
+    padding-left: 50px;
+    font-size: 15px;
+}
+
+/*Liens EXP et Form*/
+.bloc1{
+    background-color: rgb(106, 238, 176);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/*Liens EXP*/
+.paddingleft{
+    padding-left: 50px;
+}
+
+
+
+
+
+/*--------------------------COORDONNEES--------------------------*/
+.bloc2{
+    background-color: rgb(202, 200, 200);
+    border-radius: 10px;
+    padding: 0px 10px 10px 10px;
+}
+
+
+
+
+
+/*----------------EXPERIENCES PROFESSIONNELLES-------------------*/
+.bloc3{
+    background-color: rgb(202, 200, 200);
+    border-radius: 10px;
+    padding: 0px 10px 10px 10px;
+}
+
+
+
+
+
+/*-------------------FORMATIONS ET DIPLOMES-----------------------*/
+.bloc4{
+    background-color: rgb(202, 200, 200);
+    border-radius: 10px;
+    padding: 0px 10px 10px 10px;
+}
+
+
+/*--------------------------FOOTER-------------------------------*/
+.bloc5{
+    background-color: rgb(202, 200, 200);
+    border-radius: 10px;
+    padding: 0px 10px 10px 10px;
 }

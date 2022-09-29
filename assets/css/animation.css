@@ -1,0 +1,139 @@
+/*Mon style*/
+
+.container{
+    background-color: rgb(116, 184, 216);
+    padding: 2em;
+}
+
+
+
+
+
+.boutton{
+    background-color: red;
+    color: black;
+    font-size: 3vw;   /*Valeur qui se cale sur la taille de l'écran (un peu responsive)*/
+    cursor: pointer;
+    padding: 1em;
+    width: 500px;
+    margin: 100px auto;
+    border-radius: 50px;
+    font-size: 40px;
+
+    transform: scale(1);  /*Application d'une transformation, il est nécéssaire de mettre la valeur .boutton:hover plus bas*/
+    transition: 2s;       /*ou bien 1000ms, ajout de la durée pour fluidifier l'animation*/
+}
+
+.boutton:hover{               /*hover = au survol*/
+    transform: scale(1.25);  /*valeur plus grosse = grossis, valeur plus petite = rapetitie*/
+}
+
+
+
+
+
+
+form{
+    width: 500px;
+    margin: auto;
+}
+
+/*On applique le css au cadre pour remplir le formulaire  */
+form input{                             
+    border: 2px solid white;
+    border-radius: 100em;
+    color: darkblue;
+    font-size: 2.5em;
+    outline: none;   /*rectangle autour du texte*/
+    width: 100%;
+}
+
+/*Applique le css quand on clic sur le cadre input*/
+/*utilisation du pseudo class : focus lorsque notre input est sélectionné*/
+form input:focus{
+    border: 2px dotted rgb(10, 66, 24);
+}
+
+/*Utilisation du pseudo class invalid pour vérifier l'état des données saisis
+Pour affiner, utilisation de la pseudo classe not() combinée à focus :
+    *not() passera à true lorsque son sélecteur est à false
+    *not() est true quand l'input N'EST PAS : focus
+    Ici, si l'input n'est pas en : focus ET si : invalid est true, la couleur rouge apparait quand notre utilisateur à terminé de remplir son courriel*/
+
+form input:not(:focus):invalid{    /*ici on met du css dans la condition ou la case est invalide (pas d'@ pour email) et qu'on est plus dans la case (focus)*/
+    border: 2px solid red;
+    background: red;
+    color: white;
+}
+
+
+
+
+
+
+
+.balle{
+    width: 200px;
+    height: 200px;
+    background: purple;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.boutton2{
+    background-color: red;
+    color: black;
+    font-size: 3vw;   /*Valeur qui se cale sur la taille de l'écran (un peu responsive)*/
+    cursor: pointer;
+    padding: 1em;
+    width: 500px;
+    margin: 200px auto;
+    border-radius: 50px;
+    font-size: 40px;
+    transform: scale(0.5);  /*Application d'une transformation, il est nécéssaire de mettre la valeur .boutton:hover plus bas*/
+    transition: 1s;       /*ou bien 1000ms, ajout de la durée pour fluidifier l'animation*/
+}
+
+.boutton2:hover + .balle {    /*ici : A+B = on prend le B juste après la A, soit la class balle juste apres la class boutton2*/           
+    transform: scale(1.25); 
+    transition: 400ms; 
+    background: yellow;
+}
+
+
+
+
+
+
+
+.boutton3{
+    background-color: red;
+    color: black;
+    font-size: 3vw;   /*Valeur qui se cale sur la taille de l'écran (un peu responsive)*/
+    cursor: pointer;
+    padding: 1em;
+    width: 500px;
+    margin: 100px auto;
+    border-radius: 50px;
+}
+
+.progres{
+    width: 500px;
+    height: 30px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 2px;
+}
+
+.barre-progres{
+    background: chartreuse;
+    height: 30px;
+    transform: scaleX(0);       /*ScaleX : Sans scale X, le fond chartreuse apparait en entier, en augmentant la valeur, la couleur va dépasser la barre
+                                Scalex(0) fait disparaitre notre bg*/
+    transform-origin: 0 50%;   /*transform-origin fonctionne avec 2 parametres, x et y (gauche et top)*/
+    transition: 3000ms cubic-bezier (.72, .13, .5, .77);   /*Permet de faire charger le barre à un certain rythme : voir site cubic bezier*/
+}
+
+.boutton3:active + .progres > .barre-progres{     /*ici on prend ce qui est apres dans boutton3 et son enfant soit barre progres*/
+    transform: scaleX(1);
+}
